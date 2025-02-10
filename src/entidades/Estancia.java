@@ -1,7 +1,7 @@
 package entidades;
 import java.sql.Date;
 
-public class Estancias {
+public class Estancia {
   private int idEstancia;
   private int idCliente;
   private int idCasa;
@@ -9,7 +9,7 @@ public class Estancias {
   private Date fechaDesde;
   private Date fechaHasta;
 
-  public Estancias(int idCliente, int idCasa, String nombreHuesped, Date fechaDesde, Date fechaHasta) {
+  public Estancia(int idCliente, int idCasa, String nombreHuesped, Date fechaDesde, Date fechaHasta) {
     this.idCliente = idCliente;
     this.idCasa = idCasa;
     this.nombreHuesped = nombreHuesped;
@@ -17,7 +17,7 @@ public class Estancias {
     this.fechaHasta = fechaHasta;
   }
 
-  public Estancias(int idEstancia, int idCliente, int idCasa, String nombreHuesped, Date fechaDesde, Date fechaHasta) {
+  public Estancia(int idEstancia, int idCliente, int idCasa, String nombreHuesped, Date fechaDesde, Date fechaHasta) {
     this.idEstancia = idEstancia;
     this.idCliente = idCliente;
     this.idCasa = idCasa;
@@ -26,7 +26,7 @@ public class Estancias {
     this.fechaHasta = fechaHasta;
   }
 
-  public Estancias() {
+  public Estancia() {
   }
 
   public int getIdEstancia() {
@@ -79,7 +79,7 @@ public class Estancias {
 
   @Override
   public String toString() {
-    return "Estancias [idEstancia=" + idEstancia + ", idCliente=" + idCliente + ", idCasa=" + idCasa
+    return "Estancia [idEstancia=" + idEstancia + ", idCliente=" + idCliente + ", idCasa=" + idCasa
         + ", nombreHuesped=" + nombreHuesped + ", fechaDesde=" + fechaDesde + ", fechaHasta=" + fechaHasta + "]";
   }
 }
