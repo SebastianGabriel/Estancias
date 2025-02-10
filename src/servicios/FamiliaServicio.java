@@ -1,4 +1,4 @@
-package servicio;
+package servicios;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +18,15 @@ public  void mostrarFamiliasConTresHijos() throws Exception{
             System.out.println(f.toString());
         }
     }
+}
 
+public void mostrarFamiliasConHotmail() throws Exception{
+    List<Familias> familiasCompleto = fd.listaFamilias();
+    for (Familias f : familiasCompleto) {
+        if(f.getEmail().contains("hotmail")){
+            System.out.println(f.toString());
+        }
+    }
 }
 
 }
